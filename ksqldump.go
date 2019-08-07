@@ -38,6 +38,10 @@ func main() {
 		os.Exit(0)
 	}
 	ksqlServer := args[2]
+	if !strings.HasSuffix(ksqlServer, "/ksql") {
+		ksqlServer = fmt.Sprintf("%s/ksql", ksqlServer)
+	}
+
 	fileName := args[4]
 	file, err := os.Create(fileName)
 	if err != nil {
