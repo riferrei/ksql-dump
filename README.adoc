@@ -9,6 +9,7 @@ go build -o ksqldump
 ----
 
 == Using
+You might want to put the utility in your PATH so you don't need to specify where the file resides.
 [source,bash]
 ----
 ksqldump -s <KSQL_SERVER> -f <FILENAME>
