@@ -5,7 +5,7 @@ Simple utility to dump KSQL streams and tables into a file
 This utility was written in Go, thus you need to have it installed in your machine to build a native executable. You can download Go here link:here[https://golang.org/dl/].
 [source,bash]
 ----
-go build -o ksqldump
+go build -o ksqldump ksqldump.go
 ----
 
 == Using
